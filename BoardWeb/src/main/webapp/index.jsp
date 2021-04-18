@@ -10,7 +10,7 @@
 	<center>
 		<h1>게시판 프로그램</h1>
 		<hr>
-		<a href="login.do">로그인</a><br>
+		<a href="login.do">로그인</a><br><!-- 클릭으로 넘어가는것은 url로 주소를 주는것이니 get방식임 -->
 		<br>
 		<br> <a href="getBoardList.do">글 목록 바로가기</a><br><br><br>
 		<a href="dataTransform.do">글 목록 변환 처리</a><br>

@@ -12,13 +12,13 @@ import com.springbook.biz.user.impl.UserDAO;
 
 @Controller
 public class LoginController {
-
+	// index에서 로그인을 클릭하면 login.do라는 주소로 요청이 오니 get방식으로 처리됨
 	@RequestMapping(value = "/login.do", method = RequestMethod.GET)
 	public String loginView(@ModelAttribute("user") UserVO vo) {
 		System.out.println("로그인 화면으로 이동...");
 		vo.setId("test");
-		vo.setPassword("test123");
-		return "login.jsp";
+		vo.setPassword("test123");// 로그인창에 아이디, 패스워드가 넣어져있는 이유
+		return "login.jsp";//최종적으로 아이디와 패스워드가 넣어져있는 jsp 화면을 보게된다.
 	}
 
 	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
