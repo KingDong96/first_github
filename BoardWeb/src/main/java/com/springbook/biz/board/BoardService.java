@@ -2,7 +2,8 @@ package com.springbook.biz.board;
 
 import java.util.List;
 
-public interface BoardService {
+public interface BoardService { //이 보드서비스는 그저 인터페이스고
+	// BoardServiceImpl.java가 보드서비스의 실 구현 객체(클래스)다
 	// CRUD 기능의 메소드 구현
 	// 글 등록
 	void insertBoard(BoardVO vo);

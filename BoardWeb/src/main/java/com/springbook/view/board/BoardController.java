@@ -20,13 +20,13 @@ import com.springbook.biz.board.BoardService;
 import com.springbook.biz.board.BoardVO;
 
 @Controller
-@SessionAttributes("board")
+@SessionAttributes("board")//이건 뭐지? 이 세션 속성을 "board"라고 한데
 public class BoardController {
-	@Autowired
+	@Autowired//이걸 써서 BoardService 타입의 BoardServiceImpl 객체가 의존성 주입된다... 라고 399페이지에 있는데 왜????
 	private BoardService boardService;
 
 	@RequestMapping("/dataTransform.do")
-	@ResponseBody
+	@ResponseBody//이건 또 뭐지?
 	public BoardListVO dataTransform(BoardVO vo) {
 		vo.setSearchCondition("TITLE");
 		vo.setSearchKeyword("");
@@ -52,7 +52,7 @@ public class BoardController {
 
 	// 글 수정
 	@RequestMapping("/updateBoard.do")
-	public String updateBoard(@ModelAttribute("board") BoardVO vo) {
+	public String updateBoard(@ModelAttribute("board") BoardVO vo) {//@ModelAttribute("board")는 위에 세션속성과 이름이 같으면 세션에서 정보를 가져와 이 파라미터에 넣는다.
 		boardService.updateBoard(vo);
 		return "getBoardList.do";
 	}
