@@ -1,0 +1,84 @@
+[미니 프로젝트 팀별 : 미션 안내]
+
+1. MINI PROJECT 제목
+   JAVA Servlet/JSP/Spring MVC LevelUp 게시판 프로그램 제작
+
+2. 기획의도(Intention of the plan)
+   JAVA Servlet/JSP/Spring MVC LevelUp 게시판 프로그램을 제작함.
+
+3. 데이터베이스 분석 및 설계
+   라이브 코딩용 JAVA Servlet/JSP/Spring MVC LevelUp 게시판
+   프로그램 제작에 필요한 데이터베이스구축을 위한 분석 및 설계를 목표로 함.
+
+4. 요구 사항 분석
+   1) 요구 적용 기술
+      ① Front-End 웹사이트는 기본적으로 HTML5, CSS3, Javascript, jQuery, JSON, Ajax를
+         활용 하시기 바라며, 레이아웃(Layout)으로 Bootstrap 반응형 웹(또는 모바일 웹
+         초이스)로 필수 적용하시기를 바랍니다. 여기에, Spring JSP include (또는 Tiles)를
+        선택적으로 활용하시기 바랍니다.
+
+      ② Back-End 웹사이트는 JAVA Servlet/JSP/Spring MVC, WAS(ApacheTomcat 9.0),
+          Maven, JSTL, Lombok, JDBC, MyBatis, Oracle11g DB, 공공API 활용[회원 가입 시
+          “주소” 칼럼 정보는 도로명주소(행정안전부)를 활용하시기 바라며, Oracle11g DB에
+          주소 정보값들이 저장될 수 있도록 하시기 바랍니다]
+ 
+  2) 개발 요구 기능 : [필수 기능 개발 요구 사항]
+     ① 로그인, 로그아웃, “(회원가입 이메일로) ID찾기”,
+         “(회원가입 아이디와 이메일로) PW찾기”
+     ② 회원정보 수정, 회원가입(프로필 이미지 업로드, 관리자/사용자 구분 가입, 아이디,
+        비밀번호, 이메일, 성명, 생년월일, 연락처, 주소, 상세주소 등 포함), 회원탈퇴
+     ③ 게시판 글쓰기, 게시판 글수정, 게시판 글조회, 게시판 글삭제,
+         웹사이트 하단 페이징 처리(1, 2, 3, ...)
+     ④ 게시판 작성글 댓글, 게시판 작성글 뷰 카운트, 게시판 작성글 댓글 좋아요 체크 및
+         좋아요 체크 카운트, 게시판 작성글 댓글 싫어요 체크 및 싫어요 체크 카운트
+     ⑤ 관리자(admin) 아이디 "공지사항 글등록/글수정/글삭제" 기능,
+         사용자(user) 아이디 "공지사항 검색, 읽기만 가능", 하단 페이징 처리(1, 2, 3, …) 기능
+     ⑥ 반응형 모바일웹 적용, Bootstrap 및 FontAwesome 활용
+     ⑦ JAVA Servlet/JSP/Spring MVC Framework, MyBatis, OracleDB 게시판 프로그램 제작
+
+   3) 일정 관리 : Agile Kanban Process(Trello Kanban Board), Gantt Chart
+
+   4) 형상 관리 : Git, Github, Sourcetree, Eclipse Git/Github
+
+   5) UML : draw.io (또는 StarUML), ERD : draw.io, ERMaster
+
+5. 게시글 작성자와 동일 사용자(인증된 사용자)가
+   게시글을 작성/조회/수정/삭제한 데이터를
+   해당 게시판 DB에 CURD 하도록 적용 하시기 바랍니다.
+
+6. 다음의 산출물들을 "개발 0팀 3차 미니 프로젝트 산출물 제출" 폴더에 넣어서,
+
+   "개발 0팀 3차 미니 프로젝트 산출물 제출.zip"파일로 압축하여,
+
+   이메일 제목을 "개발 0팀 3차 미니 프로젝트 산출물 제출"로 하여
+
+   starhappykcs@nate.com 이메일로 제출해 주시기 바랍니다.
+
+  1) "개발 0팀 3차 미니 프로젝트 산출물 제출" 폴더의 "회의록" 폴더에
+     "KOSMO_77기_개발0팀_회의록(210402)_미니프로젝트.doc" 형식의
+      회의록 자료들을 넣어서 제출합니다.
+
+  2) "KOSMO_77기_개발 0팀_미니프로젝트_기획_분석_설계_보고서.doc"를 제출합니다.
+      (보고서에 UML, ERD, Logical Modeling ERD, Physical Modeling ERD 포함 제출)
+
+  3) "KOSMO_77기_개발 0팀_Unit_Test_보고서.pptx"를 제출합니다.
+     (Dev_Unit_Test_이름기재.pptx 파일을 참고 바람)
+
+  4) "개발 0팀_프로젝트_GanttChart.xlsx"를 제출합니다.
+
+  5) "KOSMO_77기_개발 0팀_Git_Github_활용_Guide_매뉴얼_절차서.doc"와
+     "개발0팀 미니프로젝트 형상관리메모.txt" 파일을 제출합니다.
+
+  6) "KOSMO_77기_개발 0팀_일정관리_형상관리_활용_종합보고서.pptx"를 제출합니다.
+      (개발 0팀_Dev_Schedule_참고활용.pptx 파일을 참고 바람)
+
+  7) 미니 프로젝트 팀별로 Eclipse에서 최종 완성된 미션 "SpringLevelUp 프로젝트"를
+
+      Export해서 "SpringLevelUp.zip" 파일로 생성해서 제출하시기 바랍니다.
+
+  8) Database 계정 및 권한, Table, Column, Value, Index, Trigger 등 생성 SQL 구문은
+
+     "중요) example.sql" 파일을 참고하여, "SpringLevelUp.sql" 파일로 제출하시기 바랍니다.
+
+
+7. 제출 기한 : 2021년 4월 27일(화) 23시 59분까지 제출해 주시기 바랍니다.
